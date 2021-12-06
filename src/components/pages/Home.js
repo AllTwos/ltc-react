@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ltcShowcase from "../../img/ltc-players-img-traced-2-guys-circle.png";
 import astroMan1 from "../../img/balloonaut.png";
 import astroMan2 from "../../img/astro-float-placeholder.jpg";
@@ -15,9 +16,9 @@ function Home() {
               From birthday parties to corporate events, LTC delivers right to
               your doorstep for any occasion.
             </p>
-            <a href="taggers.html" className="btn btn-primary">
+            <Link to="/rent" className="btn btn-primary">
               Get Started
-            </a>
+            </Link>
           </div>
           <img src={ltcShowcase} alt="" />
         </div>
@@ -70,9 +71,9 @@ function Home() {
               toos and clickidy clicks - then you're off to the races. Secure
               your rental today!
             </p>
-            <a href="rent.html" className="btn btn-primary">
+            <Link to="/rent" className="btn btn-primary">
               Rent
-            </a>
+            </Link>
           </div>
         </div>
       </div>
