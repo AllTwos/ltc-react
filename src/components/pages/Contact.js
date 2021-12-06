@@ -25,19 +25,19 @@ function Contact() {
           <div className="rent-form contact-form">
             <form method="POST" action="contactForm.php">
               <div className="form-control">
-                <label for="name">Name/Organization</label>
+                <label htmlFor="name">Name/Organization</label>
                 <input type="text" name="name" id="name" required />
               </div>
               <div className="form-control">
-                <label for="phone">Phone</label>
+                <label htmlFor="phone">Phone</label>
                 <input type="tel" name="phone" id="phone" />
               </div>
               <div className="form-control">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input type="email" name="email" id="email" required />
               </div>
               <div className="form-control">
-                <label for="comments">Questions/Comments</label>
+                <label htmlFor="comments">Questions/Comments</label>
                 <textarea
                   name="comments"
                   id="comments"

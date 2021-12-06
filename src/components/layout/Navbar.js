@@ -1,7 +1,9 @@
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar({ title }) {
+  const location = useLocation();
+
   //nav colour change
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
@@ -25,18 +27,42 @@ function Navbar({ title }) {
           <ul>
             <li>
               {/* className='checked' needs to be reactive */}
-              <Link className="checked" to="/">
+              <Link
+                className={location.pathname === "/" ? "checked" : undefined}
+                to="/"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/taggers">Taggers</Link>
+              <Link
+                className={
+                  location.pathname === "/taggers" ? "checked" : undefined
+                }
+                to="/taggers"
+              >
+                Taggers
+              </Link>
             </li>
             <li>
-              <Link to="/rent">Rent</Link>
+              <Link
+                className={
+                  location.pathname === "/rent" ? "checked" : undefined
+                }
+                to="/rent"
+              >
+                Rent
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link
+                className={
+                  location.pathname === "/contact" ? "checked" : undefined
+                }
+                to="/contact"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
