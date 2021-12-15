@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { navList } from "../../data";
 
 function Navbar({ title }) {
   const location = useLocation();
@@ -25,45 +26,21 @@ function Navbar({ title }) {
         <h1 className="logo">{title}</h1>
         <nav>
           <ul>
-            <li>
-              {/* className='checked' needs to be reactive */}
-              <Link
-                className={location.pathname === "/" ? "checked" : undefined}
-                to="/"
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={
-                  location.pathname === "/taggers" ? "checked" : undefined
-                }
-                to="/taggers"
-              >
-                Taggers
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={
-                  location.pathname === "/rent" ? "checked" : undefined
-                }
-                to="/rent"
-              >
-                Rent
-              </Link>
-            </li>
-            <li>
-              <Link
-                className={
-                  location.pathname === "/contact" ? "checked" : undefined
-                }
-                to="/contact"
-              >
-                Contact
-              </Link>
-            </li>
+            {navList.map((item) => {
+              const { id, url, text } = item;
+              return (
+                <li key={id}>
+                  <Link
+                    className={
+                      location.pathname === `${url}` ? "checked" : undefined
+                    }
+                    to={url}
+                  >
+                    {text}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </div>
