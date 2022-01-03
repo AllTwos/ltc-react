@@ -3,11 +3,6 @@ import HeroBanner from "../layout/HeroBanner";
 import PlacesAutocomplete from "react-places-autocomplete";
 
 function Rent() {
-  //need state for form text + google api
-
-  //STATE**
-
-  //Text state
   const [text, setText] = useState({
     name: "",
     phone: "",
@@ -32,8 +27,7 @@ function Rent() {
 
   const [address, setAddress] = useState("");
 
-  //FUNCS**
-
+  //FUNCS
   //Text change
   function textChange(e) {
     let value = e.target.value;
@@ -55,11 +49,6 @@ function Rent() {
   function addressChange(e) {
     console.log(e.target.value);
   }
-
-  //Tagger options change (kinda rinky dink of setting state)
-  // const taggerTypeChange = (e) => {
-  //   setTagType([e.target.value]);
-  // };
 
   //Tagger options restock state
   const taggerTypeRestock = () => {
