@@ -71,7 +71,7 @@ function Home() {
               toos and clickidy clicks - then you're off to the races. Secure
               your rental today!
             </p>
-            <Link to="/rent" className="btn btn-primary">
+            <Link to="#" className="btn btn-primary">
               Rent
             </Link>
           </div>
