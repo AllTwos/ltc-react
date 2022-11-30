@@ -13,7 +13,7 @@ export const navList = [
   },
   {
     id: 3,
-    url: "/",
+    url: "#",
     text: "Rent",
   },
   {
