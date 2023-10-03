@@ -13,12 +13,12 @@ export const navList = [
   },
   {
     id: 3,
-    url: "#",
-    text: "Rent",
+    url: "/rent-simple",
+    text: "Rent / Contact",
   },
-  {
-    id: 4,
-    url: "/contact",
-    text: "Contact",
-  },
+  // {
+  //   id: 4,
+  //   url: "/contact",
+  //   text: "Contact",
+  // },
 ];

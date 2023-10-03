@@ -16,7 +16,7 @@ function Home() {
               From birthday parties to corporate events, LTC delivers right to
               your doorstep for any occasion.
             </p>
-            <Link to="/rent" className="btn btn-primary">
+            <Link to="/rent-simple" className="btn btn-primary">
               Get Started
             </Link>
           </div>

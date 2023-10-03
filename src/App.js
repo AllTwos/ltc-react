@@ -7,6 +7,7 @@ import Navbar from "./components/layout/Navbar";
 import Home from "./components/pages/Home";
 import Taggers from "./components/pages/Taggers";
 import Rent from "./components/pages/Rent";
+import RentSimple from "./components/pages/RentSimple";
 import Contact from "./components/pages/Contact";
 
 import "./css/Utilities.css";
@@ -22,9 +23,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/taggers" element={<Taggers />} />
           <Route path="/rent" element={<Rent />} />
+          <Route path="/rent-simple" element={<RentSimple />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer copyright="2021" />
+        <Footer copyright="2023" />
       </Router>
     </div>
   );

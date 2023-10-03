@@ -1,5 +1,6 @@
 import React from "react";
 import HeroBanner from "../layout/HeroBanner";
+import { Link } from "react-router-dom";
 import phoenixPic from "../../img/PhoenixEquipPage.png";
 import heroPic from "../../img/HeroEquipPage.png";
 
@@ -9,7 +10,7 @@ function Taggers() {
       <HeroBanner
         type="taggers"
         title="Taggers"
-        lead="Pick that tagger that best suits your event"
+        lead="Pick the tagger that best suits your event"
       />
 
       {/* Taggers Phoenix */}
@@ -31,6 +32,9 @@ function Taggers() {
             <p className="lead">Per Tagger: $16</p>
             <p className="lead">10 Tagger Package: $144</p>
             <p className="lead">20 Tagger Package: $279</p>
+            <Link to="/rent-simple" className="btn btn-primary my-2">
+              Get Started
+            </Link>
           </div>
         </div>
       </section>
@@ -55,6 +59,9 @@ function Taggers() {
             <p className="lead">Per Tagger: $14</p>
             <p className="lead">10 Tagger Package: $126</p>
             <p className="lead">20 Tagger Package: $246</p>
+            <Link to="/rent-simple" className="btn btn-primary my-2">
+              Get Started
+            </Link>
           </div>
         </div>
       </section>
