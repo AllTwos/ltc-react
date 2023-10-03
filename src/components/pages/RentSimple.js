@@ -24,7 +24,12 @@ function RentSimple() {
         <h1>
           Email:{" "}
           <a href={mailString}>
-            <span style={{ color: "var(--primary-color)" }}>
+            <span
+              style={{
+                color: "var(--primary-color)",
+                fontSize: "0.7em",
+              }}
+            >
               lasertagca@gmail.com
             </span>
           </a>
