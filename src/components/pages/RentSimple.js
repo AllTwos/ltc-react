@@ -42,7 +42,7 @@ function RentSimple() {
           <li>Date of Event</li>
           <li>Type of Tagger and Amount</li>
         </ul>
-        <div style={{ margin: "10rem" }}></div>
+        <div style={{ margin: "10rem 0" }}></div>
       </div>
     </>
   );
