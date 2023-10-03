@@ -14,7 +14,7 @@ export const navList = [
   {
     id: 3,
     url: "/rent-simple",
-    text: "Rent / Contact",
+    text: "Rent",
   },
   // {
   //   id: 4,

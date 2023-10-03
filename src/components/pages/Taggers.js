@@ -29,9 +29,9 @@ function Taggers() {
               mode you choose to play, the Phoenix is going to keep the party
               going!
             </p>
-            <p className="lead">Per Tagger: $16</p>
-            <p className="lead">10 Tagger Package: $144</p>
-            <p className="lead">20 Tagger Package: $279</p>
+            <p className="lead">Per Tagger: $20</p>
+            <p className="lead">10 Tagger Package: $180</p>
+            <p className="lead">20 Tagger Package: $350</p>
             <Link to="/rent-simple" className="btn btn-primary my-2">
               Get Started
             </Link>
@@ -56,9 +56,9 @@ function Taggers() {
               player. This dynamic tagger has a set of nine lives and can be
               reset quickly and with ease. A perfect choice for indoor play!
             </p>
-            <p className="lead">Per Tagger: $14</p>
-            <p className="lead">10 Tagger Package: $126</p>
-            <p className="lead">20 Tagger Package: $246</p>
+            <p className="lead">Per Tagger: $18</p>
+            <p className="lead">10 Tagger Package: $162</p>
+            <p className="lead">20 Tagger Package: $320</p>
             <Link to="/rent-simple" className="btn btn-primary my-2">
               Get Started
             </Link>

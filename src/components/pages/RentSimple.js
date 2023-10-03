@@ -9,7 +9,7 @@ function RentSimple() {
     <>
       <HeroBanner
         type="rent"
-        title="Rent / Contact"
+        title="Rent"
         lead="Simply send us an email and we'll get back to you!"
       />
       <div className="container">
