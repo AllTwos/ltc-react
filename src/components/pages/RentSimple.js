@@ -14,7 +14,7 @@ function RentSimple() {
       />
       <div className="container">
         <div
-          className="my-1"
+          className="my-2"
           style={{
             width: "10%",
             height: "2px",
@@ -42,6 +42,27 @@ function RentSimple() {
           <li>Date of Event</li>
           <li>Type of Tagger and Amount</li>
         </ul>
+
+        <h1>
+          <div
+            className="my-2"
+            style={{
+              width: "10%",
+              height: "2px",
+              background: "var(--primary-color)",
+            }}
+          ></div>
+          Phone:{" "}
+          <a
+            style={{
+              color: "var(--primary-color)",
+              fontSize: "0.7em",
+            }}
+            href="tel:5196395964"
+          >
+            519-639-5964
+          </a>
+        </h1>
         <div style={{ margin: "10rem 0" }}></div>
       </div>
     </>
