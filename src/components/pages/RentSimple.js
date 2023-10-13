@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Helmet } from "react-helmet";
 import HeroBanner from "../layout/HeroBanner";
 
 function RentSimple() {
@@ -7,6 +7,15 @@ function RentSimple() {
     "mailto:lasertagca@gmail.com?subject=Laser Tag Booking&body=Name:%0D%0APhone:%0D%0APostal Code:%0D%0ADate of Event:%0D%0AType of Tagger and Amount:";
   return (
     <>
+      {/* SEO */}
+      <Helmet>
+        <title>Rent Laser Tag Equipment Across Canada</title>
+        <meta name="description" content="" />
+        <meta
+          name="keywords"
+          content="laser tag rent, laser tag birthday, canada laser tag,"
+        />
+      </Helmet>
       <HeroBanner
         type="rent"
         title="Rent"

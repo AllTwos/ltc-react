@@ -1,12 +1,22 @@
 import React from "react";
 import HeroBanner from "../layout/HeroBanner";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import phoenixPic from "../../img/PhoenixEquipPage.png";
 import heroPic from "../../img/HeroEquipPage.png";
 
 function Taggers() {
   return (
     <>
+      {/* SEO */}
+      <Helmet>
+        <title>Taggers - Laser Tag Guns Canada</title>
+        <meta name="description" content="" />
+        <meta
+          name="keywords"
+          content="laser tag rent, laser tag birthday, canada laser tag,"
+        />
+      </Helmet>
       <HeroBanner
         type="taggers"
         title="Taggers"

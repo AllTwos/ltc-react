@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import ltcShowcase from "../../img/ltc-players-img-traced-2-guys-circle.png";
 import astroMan1 from "../../img/balloonaut.png";
 import astroMan2 from "../../img/astro-float-placeholder.jpg";
@@ -7,6 +8,15 @@ import astroMan2 from "../../img/astro-float-placeholder.jpg";
 function Home() {
   return (
     <div>
+      {/* SEO */}
+      <Helmet>
+        <title>Laser Tag Rentals Across Canada</title>
+        <meta name="description" content="" />
+        <meta
+          name="keywords"
+          content="laser tag rent, laser tag birthday, canada laser tag,"
+        />
+      </Helmet>
       {/* Showcase */}
       <section className="showcase">
         <div className="container grid">
